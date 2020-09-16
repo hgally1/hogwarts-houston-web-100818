@@ -66,9 +66,7 @@ export class HogListContainer extends Component {
     //   return 0;})
     //return a[val].localeCompare(b[val])
 
-    hogImages = () => {
-
-    }
+    
   
 
     render() {

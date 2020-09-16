@@ -27,7 +27,7 @@ export class Hog extends Component {
                         <div className="hidden content">
                             <div className="description">
                                 <p>Specialty: {this.props.hog.specialty}</p>
-                                <p>Greased: {this.props.hog.greased}</p>
+                                <p>{this.props.hog.greased === true ? "Greased" : "Not Greased"}</p>
                                 <p>Weight: {this.props.hog.weight} lbs</p>
                                 <p>Highest medal achieved: {this.props.hog['highest medal achieved']}</p>
             
