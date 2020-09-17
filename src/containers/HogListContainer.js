@@ -74,7 +74,9 @@ export class HogListContainer extends Component {
             <div>
               
               <HogSort filterHogs={this.filterHogs} sortHogs={this.sortHogs} />
-              <HogList hogs={this.state.hogs}/>
+              <div className="indexWrapper">
+                <HogList hogs={this.state.hogs}/>
+              </div>
             </div>
         
         )

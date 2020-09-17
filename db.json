@@ -7,7 +7,7 @@
         "greased": false,
         "weight": 2,
         "highest medal achieved": "bronze",
-        "image": "mudblood.jpg"
+        "image":"https://res.cloudinary.com/dabeyvbyw/image/upload/v1544712625/mudblood.jpg"
         },
         {
         "id": 7,
@@ -16,7 +16,7 @@
         "greased": true,
         "weight": 1.6,
         "highest medal achieved": "silver",
-        "image":"porkchop.jpg"
+        "image":"https://res.cloudinary.com/dabeyvbyw/image/upload/v1544712625/porkchop.jpg"
         },
         {
         "id": 8,
@@ -115,7 +115,7 @@
         "greased": true,
         "weight": 4.1,
         "highest medal achieved": "wood",
-        "image":"/Users/heidigally/programming/module4/hogwarts-houston-web-100818/src/hog-imgs/augustus_gloop.jpg"
+        "image":"https://res.cloudinary.com/dabeyvbyw/image/upload/v1544712623/augustus_gloop.jpg"
         }
     ]
 }
