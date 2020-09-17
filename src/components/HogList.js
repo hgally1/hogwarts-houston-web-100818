@@ -8,21 +8,31 @@ import Hog from './Hog'
 //   ))
 // }
 export class HogList extends Component {
-    render() {
-      const img = require(`../hog-imgs/cherub.jpg`);
-        return (
-          <div className="ui centered grid container">
-            
+  
+  getImage = (input) => {
+    let name = input.split(' ').join('_').toLowerCase()
+    return require(`../hog-imgs/${name}.jpg`)
+  }
+
+
+
+  render() {
+
+
+
+    return (
+        <div className="ui centered grid container">
+
             {this.props.hogs.map(hog => (
-             <Hog hog={hog} img={img}/>
-             
-            
+                <Hog hog={hog} getImage={this.getImage}/>
+
             ))};
-            
+
 
         </div>
-        )
-    }
+    )
+  }
 }
 
 export default HogList
+

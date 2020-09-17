@@ -16,24 +16,22 @@ export class HogSort extends Component {
 
     render() {
         return (
-            <div>
+            <div className="filterWrapper">
                 {/*filter: drop down menu to choose 'all' 'greased' or 'ungreased' */}
                 {/*sort: drop down mentu, choices= 'name' or 'weight' */}
-                
-                    <form>
-                        <select onChange={this.handleGreasedFilter}>
-                            <option value='all'>All Hogs</option>
-                            <option value='true'>Greased</option>
-                            <option value=''>Not Greased</option>
-                        </select>
-                        <select onChange={this.handleSort}>
-                            {/* <option value='all'>All Hogs</option> */}
-                            <option value='name'>sort by name (A-Z)</option>
-                            <option value='weight'>sort by weight (ascending)</option>
-                        </select>
-                    </form>
-			    
-                
+                <form>
+                    <select onChange={this.handleGreasedFilter}>
+                        <option value='all'>All Hogs</option>
+                        <option value='true'>Greased</option>
+                        <option value=''>Not Greased</option>
+                    </select>
+                    <select onChange={this.handleSort}>
+                        {/* <option value='all'>All Hogs</option> */}
+                        <option>Sort by:</option>
+                        <option value='name'>sort by name (A-Z)</option>
+                        <option value='weight'>sort by weight (ascending)</option>
+                    </select>
+                </form>
             </div>
         )
     }
